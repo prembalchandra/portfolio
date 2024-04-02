@@ -8220,7 +8220,7 @@ ul.slick-dots li button {
 }
 
 .tab-content-wrapper .tab-content {
-  padding: 45px 25px;
+  padding: 34px 0px;
   background: #212428;
   border-radius: 10px;
 }
@@ -18233,7 +18233,7 @@ span.sr-only {
 
 @media only screen and (max-width: 575px) {
   .rn-about-area .contant {
-    padding: 0 10px;
+    padding: 0 0px;
     padding-top: 16px;
   }
 }
@@ -21922,6 +21922,7 @@ body.white-version .rn-btn-ulderline {
   position: absolute;
   top: 0;
   width: 100%;
+  margin: 12px 0;
 }
 
 .navbar-collapse {
@@ -22017,7 +22018,12 @@ body.white-version .rn-btn-ulderline {
 }
 
 @media only screen and (max-width: 767px) {
-.navbar-brand img {
-  max-width: 133px;
-}
+  .navbar-brand img {
+    max-width: 133px;
+  }
+
+  .contact-us {
+    padding: 9px 13px;
+    margin-right: 0;
+  }
 }
