@@ -22015,3 +22015,9 @@ body.white-version .rn-btn-ulderline {
 .contact-us span:nth-child(1) {
   margin-right: 11px;
 }
+
+@media only screen and (max-width: 767px) {
+.navbar-brand img {
+  max-width: 133px;
+}
+}
