@@ -745,6 +745,7 @@ p.services-discription {
     }
     .about-area .about-me-box {
         padding: 40px 30px;
+        flex-direction: column;
     }
     .about-area .about-me-box .img-box {
         width: 190px;
@@ -810,6 +811,7 @@ p.services-discription {
     .about-area .about-me-box .img-box {
         width: 224px;
         height: 224px;
+        display: none;
     }
     .about-area .about-me-box .infos h1 {
         font-size: 36px;
@@ -828,7 +830,7 @@ p.services-discription {
         justify-content: space-between;
     }
     .about-area .container > .row:nth-child(2) .blog-service-profile-wrap > div {
-        width: calc(50% - 12px);
+        width: 100%;
     }
     .about-area .container > .row:nth-child(2) .blog-service-profile-wrap > div:nth-child(2) {
         order: 3;
@@ -1891,6 +1893,7 @@ ul.flex.gap-4.items-center.footer_footerList__yYtOz {
     display: flex;
     align-items: flex-start;
     gap: 22px;
+    flex-wrap: wrap;
 }
 
 .profile-img {
@@ -1933,4 +1936,55 @@ ul.flex.gap-4.items-center.footer_footerList__yYtOz {
 .resume_socalName__6zdn-border{
     border-right: 3px solid #d6c4c4;
     padding-right: 14px;
+}
+
+
+@media (max-width: 991px) {
+    .clients-working-card-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.about-me-box-hbdj h1 {
+    font-size: 36px;
+}
+}
+@media (max-width: 768px) {
+    .clients-working-card-box {
+    grid-template-columns: repeat(1, 1fr);
+}
+.about-area .about-me-box .infos h1 {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .resume_divi__border-line{
+        display: none;
+    }
+    .resume_dots__W8tzf:after{
+        display: none;
+    }
+    .resume-list-company{
+        flex-direction: column;
+    }
+    .resume_rightBox__sP9Uw{
+        width: 100%;
+    }
+    .resume_contactList__FRoaw {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    padding: 15px 0;
+    }
+    .resume_socalName__6zdn-border{
+        border: none;
+    }
+    p{
+        text-align: justify;
+    }
+    ul.skills-listing-row {
+    gap: 6px;
+}
+.skill-name {
+    font-size: 13px;
+}
 }
